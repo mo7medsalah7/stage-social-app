@@ -25,16 +25,28 @@ function Menu() {
 			<div className="space-y-2">
 				<Link href={`/`}>
 					<a>
-						<MenuItem title="Home" Icon={HomeIcon} />
+						<MenuItem
+							title="Home"
+							Icon={HomeIcon}
+							className="w-5 h-5 ml-2 "
+						/>
 					</a>
 				</Link>
 
 				<Link href={user ? `/user/${user.username}` : `/user/signin`}>
 					<a>
 						{!user ? (
-							<MenuItem title="SignIn" Icon={UserIcon} />
+							<MenuItem
+								title="SignIn"
+								Icon={UserIcon}
+								className="w-5 h-5 ml-2 "
+							/>
 						) : (
-							<MenuItem title="Account" Icon={UserIcon} />
+							<MenuItem
+								title="Account"
+								Icon={UserIcon}
+								className="w-5 h-5 ml-2 "
+							/>
 						)}
 					</a>
 				</Link>
