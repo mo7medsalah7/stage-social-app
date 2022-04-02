@@ -52,7 +52,11 @@ function Menu() {
 				</Link>
 				<Link href={`/about`}>
 					<a>
-						<MenuItem title="Learn More" Icon={AdjustmentsIcon} />
+						<MenuItem
+							title="Learn More"
+							Icon={AdjustmentsIcon}
+							className="w-5 h-5 ml-2 "
+						/>
 					</a>
 				</Link>
 				{user && <SignOut />}
