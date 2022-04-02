@@ -1,15 +1,48 @@
 {
-  "name": "frontend",
+  "name": "satge-network",
   "version": "0.1.0",
+  "description": "Stage Network! An example React, GraphQL, Next and Apollo",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next -p 7777",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 7777",
+    "test": "NODE_ENV=development jest --watch"
   },
+  "author": "mo salah",
   "dependencies": {
-    "next": "11.0.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@apollo/client": "^3.2.9",
+    "@apollo/link-error": "^2.0.0-beta.3",
+    "@apollo/react-ssr": "^4.0.0",
+    "@heroicons/react": "^1.0.6",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
+    "apollo-upload-client": "^14.1.3",
+    "axios": "^0.21.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "date-fns": "^2.16.1",
+    "downshift": "^6.0.6",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "graphql-upload": "^11.0.0",
+    "lodash.debounce": "^4.0.8",
+    "next": "^10.0.3",
+    "next-with-apollo": "^5.1.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.3.1",
+    "react-loader-spinner": "^4.0.0",
+    "react-transition-group": "^4.4.1",
+    "trash": "^7.1.0",
+    "waait": "^1.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
